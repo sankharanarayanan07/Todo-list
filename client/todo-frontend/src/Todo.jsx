@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 export default function Todo() 
 {
   const [title,settitle] = useState("");
@@ -11,7 +10,7 @@ export default function Todo()
 
   //edit
   const [edittitle,setedittitle] = useState("");
-  const [editdescription,seteditdescription] = useState("");
+  const [editdescription,seteditdescription] = useState(""); 
   const apiuri = "http://localhost:3000";
 
   const handlesubmit = () => {
